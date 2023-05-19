@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        header h3 {
+            text-shadow: 0 0 10px #1AFF00;
+        }
+
+        nav {
+            background-color: #333333;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            --green: #1BFD9C;
+            font-size: 15px;
+            padding: 1em 15px; /* Adjusted padding */
+            letter-spacing: 0.06em;
+            position: relative;
+            font-family: inherit;
+            border-radius: 0.6em;
+            overflow: hidden;
+            transition: all 0.3s;
+            line-height: 1.4em;
+            border: 2px solid var(--green);
+            background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+            color: var(--green);
+            box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+        }
+
+        button:hover {
+            color: #82ffc9;
+            box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+        }
+
+        button:before {
+            content: "";
+            position: absolute;
+            left: -4em;
+            width: 4em;
+            height: 100%;
+            top: 0;
+            transition: transform .4s ease-in-out;
+            background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+        }
+
+        button:hover:before {
+            transform: translateX(15em);
+        }
+
+        section {
+            background-color: #333333;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px white;
+        }
+
+        section h2 {
+            font-size: 24px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333333;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            button {
+                margin-right: 2px;
+                margin-bottom: -9px;
+                padding: 5px 17px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>KRAFTURPHARMACEUTICALS</h3>
+    </header>
+
+
+    <nav>
+        <button class="button" onclick="location.href='https://maverickxo.github.io/kraftstore.github.io/'">Магазин</button>
+        <button class="button" onclick="location.href='https://maverickxo.github.io/kraftstore.github.io/sample_order.html'">Образец зaказа</button>
+
+    </nav>
+
+<section>
+    <div style="text-align: center;">
+        <h2>Отзывы о Kraftur Pharmaceutical</h2>
+    </div>
+    <div style="text-align: center;">
+        <p>
+            Мы гордимся тысячами довольных клиентов, которые достигли впечатляющих результатов с помощью наших продуктов. Присоединяйтесь к нашему сообществу и узнайте, что говорят о нас:
+        </p>
+    </div>
+</section>
+    <footer>
+        &copy; 2023 KRAFTURPHARMACEUTICALS.<br>
+        <br>
+    </footer>
+</body>
+</html>
