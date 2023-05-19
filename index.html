@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Моя веб-страница</title>
-    <style>
-        body {
-            background-color: #333333; /* Темно-серый фон */
-            color: #ffffff; /* Белый текст */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #444;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: auto;
-            padding: 20px;
-            text-align: center;
-        }
+    .container {
+      text-align: center;
+    }
 
-        .buy-button {
-            background-color: #00ff00; /* Ярко-зеленая кнопка */
-            color: #ffffff; /* Белый текст кнопки */
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none; /* Убираем подчеркивание ссылки */
-            margin-top: 20px;
-        }
-    </style>
+    h1 {
+      font-size: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      background-color: #0f0;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      margin: 20px auto;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Медиа-запрос для мобильных устройств с максимальной шириной 600 пикселей */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .button {
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Добро пожаловать в МАГАЗИН KRAFTURPHARMACEUTICALS!</h1>
-        <p>Собственное производство ААС, эталонное качество по лучшей цене.</p>
-    </div>
-    <a href="https://t.me/krafturpharmacyinfo" target="_blank"><button class="buy-button">Купить</button></a>
+  <div class="container">
+    <h1>Добро пожаловать в магазин</h1>
+    <h3>KRAFTURPHARMACEUTICALS</h3>
+    <p>Собственное производство ААС, эталонное качество по лучшей цене</p>
+    <a href="#" class="button">Купить сейчас</a>
+  </div>
 </body>
 </html>
