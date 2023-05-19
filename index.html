@@ -9,10 +9,18 @@
             color: #ffffff; /* Белый текст */
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: auto;
+            padding: 20px;
+            text-align: center;
         }
 
         .buy-button {
@@ -24,12 +32,15 @@
             font-size: 16px;
             cursor: pointer;
             text-decoration: none; /* Убираем подчеркивание ссылки */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать в МАГАЗИН KRAFTURPHARMACEUTICALS!</h1>
-    <p>Собственное производство ААС, эталонное качество по лучшей цене.</p>
-    <a href="@krafturpharmacyinfo" target="_blank"><button class="buy-button">Купить</button></a>
+    <div class="content">
+        <h1>Добро пожаловать в МАГАЗИН KRAFTURPHARMACEUTICALS!</h1>
+        <p>Собственное производство ААС, эталонное качество по лучшей цене.</p>
+    </div>
+    <a href="https://t.me/krafturpharmacyinfo" target="_blank"><button class="buy-button">Купить</button></a>
 </body>
 </html>
